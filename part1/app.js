@@ -10,7 +10,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const { fstat } = require('fs');
 
-const db = new sqlite3.Database('./');
+const db = new sqlite3.Database('./dogwalks.db',(err) => {
+    
+});
 
 
 
