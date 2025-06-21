@@ -14,7 +14,7 @@ router.get('/', async function(req, res, next) {
     })
   }
   catch(error){
-    
+    console.error('Error: could not fetch ')
   }
 });
 
