@@ -10,6 +10,12 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const { fstat } = require('fs');
 
+
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+
 const db = new sqlite3.Database('./dogwalks.db',(err) => {
     if(err){
         console.error('Failed', err);
@@ -17,12 +23,6 @@ const db = new sqlite3.Database('./dogwalks.db',(err) => {
         console.log('Loaded');
     }
 });
-
-
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 
 app.get('/api/dogs', async (req, res) => {
     try{
