@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-const DWdata = mysql.createPool({
+const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
     password: 'my_password',
@@ -25,7 +25,7 @@ const DWdata = mysql.createPool({
 
 app.get('/api/dogs', (req, res) => {
     const query = 'SELECT name, size, owner_id FROM Dogs';
-    DWdata.query(query, (err,results) => {
+    pool.query(query, (err,results) => {
         if(err){
             console.error('error fetching dogs:',err);
             res.status(500).send('Server error');
