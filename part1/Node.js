@@ -68,7 +68,7 @@ app.get('/', async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch books' });
   }
-});*/
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
