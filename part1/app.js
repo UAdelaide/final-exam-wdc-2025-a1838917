@@ -10,7 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const { fstat } = require('fs');
 
-const db = new sqlite3.Database(':memory');
+const db = new sqlite3.Database('./');
 
 
 
@@ -21,7 +21,7 @@ app.use(cookieParser());
 
 app.get('/api/dogs', async (req, res) => {
     try{
-        
+
     }
 })
 
