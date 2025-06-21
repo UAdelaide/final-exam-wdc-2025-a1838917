@@ -28,6 +28,8 @@ app.get('/api/dogs', async (req, res) => {
     DWdata.query(query, (err,results) =>{
         if(err){
             console.error('error fetching dogs:',err);
+        }else{
+            res.json(results);
         }
     })
     try{
