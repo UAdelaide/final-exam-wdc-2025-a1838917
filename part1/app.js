@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const { fstat } = require('fs');
 
-var app = express();
+const dv
 
 app.use(logger('dev'));
 app.use(express.json());
