@@ -68,4 +68,6 @@ VALUES
 (SELECT user_id FROM Users WHERE username = 'carol123','Bella','small')
 (SELECT user_id FROM Users WHERE username = 'carol123','Borus','large')
 (SELECT user_id FROM Users WHERE username = 'carol123','Baxter','small')
-(SELECT user_id FROM Users WHERE username = '5','Reggie','medium');
+(SELECT user_id FROM Users WHERE username = '4num','Reggie','medium');
+
+INSERT INTO W
