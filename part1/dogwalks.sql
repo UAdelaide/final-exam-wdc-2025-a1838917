@@ -60,4 +60,4 @@ VALUES
 (2,bobwalker,bob@example.com,hashed456,walker)
 (3,carol123,carol@example.com,hashed789,owner)
 (4,4num,4num@example.com,passcode,owner)
-(5,5walker,5walker)
+(5,5walker,555@example.com,codepass,walker)
