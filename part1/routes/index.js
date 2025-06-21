@@ -10,6 +10,10 @@ router.get('/', async function(req, res, next) {
     const response = await axios.get(DOG_API{
       params : {api_key : API_KEY}
     });
+
+    res.render('index',{
+      
+    })
   }
 });
 
