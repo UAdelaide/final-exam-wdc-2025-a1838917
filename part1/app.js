@@ -31,11 +31,7 @@ app.get('/api/dogs', async (req, res) => {
         }else{
             res.json(results);
         }
-    })
-    try{
-
-    }
-})
+    
 
 app.use(express.static(path.join(__dirname, 'public')));
 
