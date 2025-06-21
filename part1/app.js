@@ -23,11 +23,12 @@ const DWdata = mysql.createPool({
     database: 'dogwalks',
 });
 
-app.get('/api/dogs', async (req, res) => {
+app.get('/api/dogs', (req, res) => {
     const query = 'SELECT name, size, owner_id FROM Dogs';
     DWdata.query(query, (err,results) => {
         if(err){
             console.error('error fetching dogs:',err);
+            res.status()
         }else{
             res.json(results);
         }
