@@ -36,7 +36,7 @@ app.get('/api/dogs', (req, res) => {
 });
 
 app.get('/api/walkrequests/open', (req, res) => {
-    const query = 'SELECT request_id, dog_name, requested_time, duration_minutes, location, owner_id FROM WalkRequests WHERE status = 'open'';
+    const query = "SELECT request_id, dog_name, requested_time, duration_minutes, location, owner_id FROM WalkRequests WHERE status = 'open'";
 
     pool.query(query, (err,results) => {
         if(err){
