@@ -13,6 +13,7 @@ router.get('/', async function(req, res, next) {
       imageUrl: response.data.url,
     })
   }
+  
 });
 
 module.exports = router;
