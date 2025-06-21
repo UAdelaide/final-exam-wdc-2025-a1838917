@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const { fstat } = require('fs');
 
-const dv
+const db = new sqlite3.Database(':memory')
 
 app.use(logger('dev'));
 app.use(express.json());
