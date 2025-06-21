@@ -24,6 +24,7 @@ const DWdata = mysql.createPool({
 });
 
 app.get('/api/dogs', async (req, res) => {
+    const query = 'SELECT'
     try{
 
     }
