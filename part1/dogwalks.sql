@@ -67,5 +67,5 @@ VALUES
 (0,'Max','medium')
 (2,'Bella','small')
 (2,'Borus','large')
-(2,'Baxter','medium')
-(1,'Max','medium')
+(2,'Baxter','small')
+(3,'Reggie','medium')
