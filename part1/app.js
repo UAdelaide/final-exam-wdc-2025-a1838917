@@ -26,7 +26,9 @@ const DWdata = mysql.createPool({
 app.get('/api/dogs', async (req, res) => {
     const query = 'SELECT name, size, owner_id FROM Dogs';
     DWdata.query(query, (err,results) =>{
-        if()
+        if(err){
+            console.error('error')
+        }
     })
     try{
 
