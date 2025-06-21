@@ -57,4 +57,5 @@ CREATE TABLE WalkRatings (
 INSERT INTO Users(user_id, username, email, password_hash, role)
 VALUES
 (1,alice123,alice@example.com,hashed123,owner)
-(2,bobwalker,bob@example.com,)
+(2,bobwalker,bob@example.com,hashed456,walker)
+(3,)
