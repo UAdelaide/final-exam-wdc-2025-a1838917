@@ -60,12 +60,12 @@ VALUES
 (2,'bobwalker','bob@example.com','hashed456',walker)
 (3,'carol123','carol@example.com','hashed789',owner)
 (4,'4num','4num@example.com','passcode',owner)
-(5,5walker,555@example.com,codepass,walker);
+(5,'5walker','555@example.com','codepass',walker);
 
-INSERT INTO Dogs(dog_id,owner_id,name)
+INSERT INTO Users(user_id, username, email, password_hash, role)
 VALUES
-(1,alice123,alice@example.com,hashed123,owner)
-(2,bobwalker,bob@example.com,hashed456,walker)
-(3,carol123,carol@example.com,hashed789,owner)
-(4,4num,4num@example.com,passcode,owner)
-(5,5walker,555@example.com,codepass,walker);
+(1,'alice123','alice@example.com','hashed123',owner)
+(2,'bobwalker','bob@example.com','hashed456',walker)
+(3,'carol123','carol@example.com','hashed789',owner)
+(4,'4num','4num@example.com','passcode',owner)
+(5,'5walker','555@example.com','codepass',walker);
