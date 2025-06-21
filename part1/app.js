@@ -35,7 +35,7 @@ app.get('/api/dogs', (req, res) => {
     });
 });
 
-app.get('/api/dogs', (req, res) => {
+app.get('/api/walkrequests/open', (req, res) => {
     const query = 'SELECT name, size, owner_id FROM Dogs';
     pool.query(query, (err,results) => {
         if(err){
