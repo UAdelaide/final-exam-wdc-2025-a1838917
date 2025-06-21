@@ -35,6 +35,18 @@ app.get('/api/dogs', (req, res) => {
     });
 });
 
+app.get('/api/dogs', (req, res) => {
+    const query = 'SELECT name, size, owner_id FROM Dogs';
+    pool.query(query, (err,results) => {
+        if(err){
+            console.error('error fetching dogs:',err);
+            res.status(500).send('Server error');
+        }else{
+            res.json(results);
+        }
+    });
+});
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
