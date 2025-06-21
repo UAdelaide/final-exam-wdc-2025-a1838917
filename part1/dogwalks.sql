@@ -65,7 +65,7 @@ VALUES
 INSERT INTO Users(owner_id,name,size)
 VALUES
 (0,'Max','medium')
-(1,'Bella','small')
-(1,'Max','medium')
+(2,'Bella','small')
+(1,'Bor','medium')
 (1,'Max','medium')
 (1,'Max','medium')
