@@ -55,4 +55,5 @@ CREATE TABLE WalkRatings (
 );
 
 INSERT INTO Users(user_id, username, email, password_hash, role)
-VALUES()
+VALUES
+()
