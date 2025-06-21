@@ -18,7 +18,7 @@ db.exec(sql, (err) => {
     }
 });
 
-app.get
+app.get('')
 
 app.use(logger('dev'));
 app.use(express.json());
