@@ -18,8 +18,8 @@ app.use(cookieParser());
 
 const DWdata = mysql.createPool({
     host: 'localhost',
-    user: 'your_mysql_user',
-    password: 'your_password',
+    user: 'root',
+    password: 'my_password',
     database: 'dogwalks',
 });
 
