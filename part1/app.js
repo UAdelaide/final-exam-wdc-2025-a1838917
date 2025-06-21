@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 const DWdata = mysql.createPool({
-    host: 'local',
+    host: 'localhost',
     user: 'mysql_user',
     password: 'mysql_pass',
     database: 'dogwalks',
