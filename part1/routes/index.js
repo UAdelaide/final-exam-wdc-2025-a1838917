@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/api/dogs', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'EDogs' });
 });
 
 router.get('/api/walkrequests/open' , function(req, res, next){
