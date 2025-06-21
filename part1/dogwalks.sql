@@ -62,7 +62,7 @@ VALUES
 (4,'4num','4num@example.com','passcode',owner)
 (5,'5walker','555@example.com','codepass',walker);
 
-INSERT INTO Users(user_id, username, email, password_hash, role)
+INSERT INTO Users(dog_id,owner_id,name,size)
 VALUES
 (1,'alice123','alice@example.com','hashed123',owner)
 (2,'bobwalker','bob@example.com','hashed456',walker)
