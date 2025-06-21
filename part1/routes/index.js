@@ -3,7 +3,7 @@ var router = express.Router();
 
 const DOG_API = 'https://dog.ceo/api/breeds/image/random';
 
-router.get('/', function(req, res, next) {
+router.get('/', async function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
