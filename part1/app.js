@@ -36,7 +36,7 @@ app.get('/api/dogs', (req, res) => {
 });
 
 app.get('/api/walkrequests/open', (req, res) => {
-    const query = 'SELECT request_id, dogsize, owner_id FROM Dogs';
+    const query = 'SELECT request_id, dog_name, requested_time, duration_minutes';
     pool.query(query, (err,results) => {
         if(err){
             console.error('error fetching dogs:',err);
