@@ -11,10 +11,10 @@ router.get('/', async function(req, res, next) {
 
     res.render('index',{
       imageUrl: response.data.url,
-    })
+    });
   }
   catch(error){
-    console.error('Error: could not fetch ')
+    console.error('Error: could not fetch dog photo');
   }
 });
 
