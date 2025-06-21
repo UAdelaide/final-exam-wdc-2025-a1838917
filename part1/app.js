@@ -11,7 +11,9 @@ var usersRouter = require('./routes/users');
 const { fstat } = require('fs');
 
 const db = new sqlite3.Database('./dogwalks.db',(err) => {
-    
+    if(err){
+        console.error('')
+    }
 });
 
 
