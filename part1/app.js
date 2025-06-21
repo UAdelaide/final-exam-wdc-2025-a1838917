@@ -1,5 +1,5 @@
 var express = require('express');
-var sqlite3 = require('sqlite3').verbose();
+var mysql = require('mysql2');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -16,13 +16,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-const db = new sqlite3.Database('./dogwalks.db',(err) => {
-    if(err){
-        console.error('Failed', err);
-    }else{
-        console.log('Loaded');
-    }
-});
 
 app.get('/api/dogs', async (req, res) => {
     try{
