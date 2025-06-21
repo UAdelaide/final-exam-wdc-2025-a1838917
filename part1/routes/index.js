@@ -1,16 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/api/dogs', function(req, res, next) {
-  res.render('index', { title: 'Dogs' });
-});
-
-router.get('/api/walkrequests/open' , function(req, res, next){
-
-});
-
-router.get('/api/walkers/summary' , function(req, res, next){
-
-});
+const DOG_API
 
 module.exports = router;
