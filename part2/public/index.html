@@ -16,6 +16,19 @@
     <a href="owner-dashboard.html" class="btn btn-outline-primary me-2">Owner Dashboard</a>
     <a href="walker-dashboard.html" class="btn btn-outline-success">Walker Dashboard</a>
 
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+          autocomplete="current-password"
+          v-model="password"
+        />
+      </div>
+
     <button type="submit" class="submit-btn" :disabled="loading">
         <span v-if="!loading">Log In</span>
         <div v-if="loading" class="loading"></div>
