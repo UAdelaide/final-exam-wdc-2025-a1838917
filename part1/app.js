@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-const DW
+const DWdata = mysql.createPool
 
 app.get('/api/dogs', async (req, res) => {
     try{
