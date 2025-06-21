@@ -10,7 +10,7 @@ const { fstat } = require('fs');
 
 const db = new sqlite3.Database(':memory');
 const sql = fstat.readFileSync('dogwalks.sql','utf8');
-db.
+db.exec(sql, )
 
 app.use(logger('dev'));
 app.use(express.json());
