@@ -16,6 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+const data
 
 app.get('/api/dogs', async (req, res) => {
     try{
