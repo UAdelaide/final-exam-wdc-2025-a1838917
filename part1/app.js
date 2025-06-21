@@ -1,4 +1,5 @@
 var express = require('express');
+var sqlite3 = require('sqlite')
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
