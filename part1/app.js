@@ -19,6 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+app.get('/api/user')
 
 app.use(express.static(path.join(__dirname, 'public')));
 
