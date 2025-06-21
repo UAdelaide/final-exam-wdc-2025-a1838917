@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 const { fstat } = require('fs');
 
 const db = new sqlite3.Database(':memory');
-const sql = 
+const sql = fstat
 
 app.use(logger('dev'));
 app.use(express.json());
