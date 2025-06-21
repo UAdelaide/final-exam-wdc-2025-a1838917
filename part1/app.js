@@ -28,7 +28,7 @@ app.get('/api/dogs', (req, res) => {
     DWdata.query(query, (err,results) => {
         if(err){
             console.error('error fetching dogs:',err);
-            res.status()
+            res.status(500).send('Server error')
         }else{
             res.json(results);
         }
