@@ -14,7 +14,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-const db = fstat.readFileSync('dogwalks.sql','utf8');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
