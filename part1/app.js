@@ -18,6 +18,8 @@ db.exec(sql, (err) => {
     }
 });
 
+app.get
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
