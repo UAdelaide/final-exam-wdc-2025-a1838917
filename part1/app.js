@@ -28,7 +28,7 @@ app.get('/api/dogs', (req, res) => {
     pool.query(query, (err,results) => {
         if(err){
             console.error('error fetching dogs:',err);
-            res.status(500).send('Server error');
+            res.status(500).send('Dogs: Server error');
         }else{
             res.json(results);
         }
@@ -40,7 +40,7 @@ app.get('/api/walkrequests/open', (req, res) => {
     pool.query(query, (err,results) => {
         if(err){
             console.error('error fetching walkrequests:',err);
-            res.status(500).send('Server error');
+            res.status(500).send('Walkrequests: Server error');
         }else{
             res.json(results);
         }
