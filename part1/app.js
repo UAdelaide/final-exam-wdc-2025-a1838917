@@ -12,7 +12,9 @@ const { fstat } = require('fs');
 
 const db = new sqlite3.Database('./dogwalks.db',(err) => {
     if(err){
-        console.error('')
+        console.error('Failed', err);
+    }else{
+        console.log('Loaded');
     }
 });
 
