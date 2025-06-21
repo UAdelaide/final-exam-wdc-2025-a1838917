@@ -14,9 +14,9 @@ db.exec(sql, (err) => {
     if(err){
         console.error('Failed to load', err.message);
     }else {
-        console.log
+        console.log('DB loaded');
     }
-}
+});
 
 app.use(logger('dev'));
 app.use(express.json());
