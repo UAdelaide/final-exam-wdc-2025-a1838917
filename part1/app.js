@@ -5,6 +5,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const { fstat } = require('fs');
 
 var app = express();
 
@@ -13,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-const db = 
+const db = fs
 
 app.use(express.static(path.join(__dirname, 'public')));
 
