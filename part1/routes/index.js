@@ -13,7 +13,9 @@ router.get('/', async function(req, res, next) {
       imageUrl: response.data.url,
     })
   }
-  
+  catch(error){
+    
+  }
 });
 
 module.exports = router;
