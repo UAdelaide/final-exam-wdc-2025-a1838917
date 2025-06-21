@@ -62,7 +62,7 @@ VALUES
 ('4num','4num@example.com','passcode','owner')
 ('5walker','555@example.com','codepass','walker');
 
-INSERT INTO Users(owner_id,name,size)
+INSERT INTO Gods(owner_id,name,size)
 VALUES
 (SELECT user_id FROM Users WHERE username = 'alice123','Max','medium')
 (SELECT user_id FROM Users WHERE username = 'carol123','Bella','small')
