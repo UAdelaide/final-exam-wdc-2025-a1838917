@@ -17,7 +17,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 const DWdata = mysql.createPool({
-    host: 
+    host: 'local',
+    user: 'mysql_user',
+    
 })
 
 app.get('/api/dogs', async (req, res) => {
