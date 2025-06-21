@@ -61,7 +61,9 @@
 
     document.getElementById('login').addEventListener('submit', function (err) {
       err.preventDefault();
-      const role = document.getElementById('role')
+      const role = document.getElementById('role').value;
+
+      if(role == 'owner')
     }
   </script>
 
