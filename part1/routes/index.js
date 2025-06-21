@@ -9,5 +9,8 @@ router.get('/api/walkrequests/open' , function(req, res, next){
 
 });
 
-router.get('/api/walkers/summary')
+router.get('/api/walkers/summary' , function(req, res, next){
+
+});
+
 module.exports = router;
