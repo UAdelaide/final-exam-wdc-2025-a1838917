@@ -5,5 +5,5 @@ var router = express.Router();
 router.get('/api/dogs', function(req, res, next) {
 });
 
-router.get('/api/')
+router.get('/api/walkrequests/open')
 module.exports = router;
