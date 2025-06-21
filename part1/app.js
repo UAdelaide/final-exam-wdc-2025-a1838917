@@ -20,8 +20,8 @@ const DWdata = mysql.createPool({
     host: 'local',
     user: 'mysql_user',
     password: 'mysql_pass',
-    database: 'dogwalks'
-})
+    database: 'dogwalks',
+});
 
 app.get('/api/dogs', async (req, res) => {
     try{
