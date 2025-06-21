@@ -62,7 +62,7 @@ VALUES
 (4,4num,4num@example.com,passcode,owner)
 (5,5walker,555@example.com,codepass,walker);
 
-INSERT INTO Dogs(dog_)
+INSERT INTO Dogs(dog_id,owner_id,name)
 VALUES
 (1,alice123,alice@example.com,hashed123,owner)
 (2,bobwalker,bob@example.com,hashed456,walker)
